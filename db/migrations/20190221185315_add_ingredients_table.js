@@ -9,7 +9,7 @@ exports.up = function(knex, Promise) {
             .unique('uq_ingredient_name');
 
         tbl
-            .timestamp('createedAt')
+            .timestamp('createdAt')
             .defaultTo(knex.fn.now());
     })
 };
